@@ -1,6 +1,10 @@
 package com.example.firebasedemo2
 
 data class User(
-    var name:String,
-    var email:String,
-)
+    var name:String? = null,
+    var email:String? = null,
+){
+    companion object{
+        const val COLLECTION_NAME = "users"
+    }
+}

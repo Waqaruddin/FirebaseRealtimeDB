@@ -26,6 +26,14 @@ class InsertActivity : AppCompatActivity() {
             Toast.makeText(applicationContext, "Inserted", Toast.LENGTH_SHORT).show()
 
 
+//            //delete
+//           databasereference.child(userId!!).setValue(null)
+//
+//            //update
+//
+//            var newUser = User("new name", "new email")
+//            databasereference.child(userId).setValue(newUser)
+
         }
     }
 }

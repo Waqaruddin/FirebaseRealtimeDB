@@ -1,39 +1,33 @@
 <LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="16dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CURD"
-        android:layout_gravity="center"/>
+        android:text="Name"
+        android:textSize="20dp"
+        android:id="@+id/text_view_name"/>
 
-
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="insert"
-        android:layout_gravity="center"
-        android:id="@+id/button_insert"/>
-
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Update"
-        android:layout_gravity="center"
-        android:id="@+id/button_update"/>
-
+        android:text="Email"
+        android:textSize="20dp"
+        android:id="@+id/text_view_email"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Delete"
-        android:layout_gravity="center"
+        android:layout_gravity="right"
         android:id="@+id/button_delete"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_gravity="right"
+        android:id="@+id/button_update"/>
 </LinearLayout>

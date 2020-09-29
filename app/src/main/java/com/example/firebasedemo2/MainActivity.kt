@@ -15,7 +15,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun init() {
         button_insert.setOnClickListener{
-            startActivity(Intent(this, InsertActivity::class.java))
+            startActivity(Intent(this, ReadActivity::class.java))
+        }
+
+        button_delete.setOnClickListener{
+            startActivity(Intent(this, DeleteActivity::class.java))
         }
     }
 }
