@@ -2,6 +2,7 @@
 //
 //import androidx.appcompat.app.AppCompatActivity
 //import android.os.Bundle
+//import com.google.firebase.database.FirebaseDatabase
 //import kotlinx.android.synthetic.main.activity_update.*
 //
 //class UpdateActivity : AppCompatActivity() {
@@ -14,7 +15,13 @@
 //
 //    private fun init() {
 //        button_update.setOnClickListener {
-//            var newUser = User(n)
+//            var databaseReference = FirebaseDatabase.getInstance().getReference("users")
+//
+//            var name = edit_text_name.text.toString()
+//            var email = edit_text_email.text.toString()
+//
+//            var newUser = User(name, email)
+//            databaseReference.child(userId).setValue(newUser)
 //        }
 //    }
 //}

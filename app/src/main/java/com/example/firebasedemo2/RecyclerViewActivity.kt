@@ -35,14 +35,14 @@ class RecyclerViewActivity : AppCompatActivity() {
     private fun getData() {
         databaseReference.addValueEventListener(object: ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                var text = ""
+                mList.clear()
+                keysList.clear()
                 for(data in dataSnapshot.children){
                     var user = data.getValue(User::class.java)
                     var key = data.key
                     mList.add(user!!)
                     keysList.add(key!!)
-                    text += user.name + "\n"
-                    adapterUser!!.setData(mList)
+                    adapterUser!!.setData(mList, keysList)
 
                 }
 
