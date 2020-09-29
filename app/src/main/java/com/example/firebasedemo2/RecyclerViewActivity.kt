@@ -27,7 +27,7 @@ class RecyclerViewActivity : AppCompatActivity() {
             startActivity(Intent(this, InsertActivity::class.java))
         }
         getData()
-        adapterUser = AdapterUser(this, mList)
+        adapterUser = AdapterUser(this, mList, keysList)
         recycler_view.layoutManager = LinearLayoutManager(this)
         recycler_view.adapter = adapterUser
     }
@@ -42,9 +42,10 @@ class RecyclerViewActivity : AppCompatActivity() {
                     var key = data.key
                     mList.add(user!!)
                     keysList.add(key!!)
-                    adapterUser!!.setData(mList, keysList)
 
                 }
+                adapterUser!!.setData(mList)
+
 
             }
 
