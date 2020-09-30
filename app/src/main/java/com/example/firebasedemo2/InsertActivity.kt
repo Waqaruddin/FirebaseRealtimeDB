@@ -24,6 +24,7 @@ class InsertActivity : AppCompatActivity() {
             var userId = databasereference.push().key
             databasereference.child(userId!!).setValue(user)
             Toast.makeText(applicationContext, "Inserted", Toast.LENGTH_SHORT).show()
+            finish()
 
 
 //            //delete

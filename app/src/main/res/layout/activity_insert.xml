@@ -2,32 +2,43 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#7B68EE"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insert"
+        android:text="New Character"
         android:textSize="32dp"
+        android:textColor="#fff"
         android:layout_gravity="center"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edit_text_name"
-        android:hint="Name"/>
+        android:hint="Name"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#fff"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edit_text_email"
-        android:hint="Email"/>
+        android:hint="Email"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="#fff"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_insert"
-        android:text="Insert"/>
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_rounded"/>
 
 
 </LinearLayout>
